@@ -15,7 +15,7 @@ Login to Azure using az cli and select the subscription you want to use. Afterwa
 terraform init && terraform apply`
 ```
 
-The resources corresponding to the definet testcase will be deployed.
+The resources corresponding to the defined testcase will be deployed.
 
 ## Deploying function code
 
@@ -24,3 +24,7 @@ After `terraform` is done run `publish_app.sh`. Remember that public access on t
 ## Azure Function setup
 
 Access the deployed function and go to `Settings->Environmental variables`. Here you need to change `AZURE_SERVICEBUS_FULLYQUALIFIEDNAMESPACE` to `SERVICEBUS__FULLYQUALIFIEDNAMESPACE`. Note the double underscore.
+
+## Cleanup
+
+When you are done with the testcases run `terraform destroy`
